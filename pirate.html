@@ -60,51 +60,116 @@
 <p class="instructions">Click on the locations to search for treasure, beware the traps</p>
 <p id="locations">Number of locations checked is zero.</p>
 <p id="penalty">Penalty is zero.</p>
-<p id="click">Click for help.</p>
+<p id="click" onclick="showHelp()">Click for help.</p>
 <p id="help">Help report.</p>
 
 <div class="game-container">
     
     <div class="image-row d-flex justify-content-center">
-        <div class="location"><img src="map.jpg" alt="Starting Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Empty Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Trap Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Empty Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Pirate Location" height="100" width="100"></div>
+        <div class="location"><img id="id0" src="map.jpg" alt="Starting Location" height="100" width="100" onclick="check(0)"></div>
+        <div class="location"><img id="id1" src="map.jpg" alt="Empty Location" height="100" width="100" onclick="check(1)"></div>
+        <div class="location"><img id="id2" src="map.jpg" alt="Trap Location" height="100" width="100" onclick="check(2)"></div>
+        <div class="location"><img id="id3" src="map.jpg" alt="Empty Location" height="100" width="100" onclick="check(3)"></div>
+        <div class="location"><img id="id4" src="map.jpg" alt="Pirate Location" height="100" width="100" onclick="check(4)"></div>
     </div>
 
     <div class="image-row d-flex justify-content-center">
-        <div class="location"><img src="map.jpg" alt="Starting Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Empty Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Trap Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Empty Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Pirate Location" height="100" width="100"></div>
+        <div class="location"><img id="id5" src="map.jpg" alt="Starting Location" height="100" width="100" onclick="check(5)"></div>
+        <div class="location"><img id="id6" src="map.jpg" alt="Empty Location" height="100" width="100" onclick="check(6)"></div>
+        <div class="location"><img id="id7" src="map.jpg" alt="Trap Location" height="100" width="100" onclick="check(7)"></div>
+        <div class="location"><img id="id8" src="map.jpg" alt="Empty Location" height="100" width="100" onclick="check(8)"></div>
+        <div class="location"><img id="id9" src="map.jpg" alt="Pirate Location" height="100" width="100" onclick="check(9)"></div>
     </div>
     
     <div class="image-row d-flex justify-content-center">
-        <div class="location"><img src="map.jpg" alt="Starting Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Empty Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Trap Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Empty Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Pirate Location" height="100" width="100"></div>
+        <div class="location"><img id="id10" src="map.jpg" alt="Starting Location" height="100" width="100" onclick="check(10)"></div>
+        <div class="location"><img id="id11" src="map.jpg" alt="Empty Location" height="100" width="100" onclick="check(11)"></div>
+        <div class="location"><img id="id12" src="map.jpg" alt="Trap Location" height="100" width="100" onclick="check(12)"></div>
+        <div class="location"><img id="id13" src="map.jpg" alt="Empty Location" height="100" width="100" onclick="check(13)"></div>
+        <div class="location"><img id="id14" src="map.jpg" alt="Pirate Location" height="100" width="100" onclick="check(14)"></div>
     </div>
     
     <div class="image-row d-flex justify-content-center">
-        <div class="location"><img src="map.jpg" alt="Starting Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Empty Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Trap Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Empty Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Pirate Location" height="100" width="100"></div>
+        <div class="location"><img id="id15" src="map.jpg" alt="Starting Location" height="100" width="100" onclick="check(15)"></div>
+        <div class="location"><img id="id16" src="map.jpg" alt="Empty Location" height="100" width="100" onclick="check(16)"></div>
+        <div class="location"><img id="id17" src="map.jpg" alt="Trap Location" height="100" width="100" onclick="check(17)"></div>
+        <div class="location"><img id="id18" src="map.jpg" alt="Empty Location" height="100" width="100" onclick="check(18)"></div>
+        <div class="location"><img id="id19" src="map.jpg" alt="Pirate Location" height="100" width="100" onclick="check(19)"></div>
     </div>
     
     <div class="image-row d-flex justify-content-center">
-        <div class="location"><img src="map.jpg" alt="Starting Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Empty Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Trap Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Empty Location" height="100" width="100"></div>
-        <div class="location"><img src="map.jpg" alt="Pirate Location" height="100" width="100"></div>
+        <div class="location"><img id="id20" src="map.jpg" alt="Starting Location" height="100" width="100" onclick="check(20)"></div>
+        <div class="location"><img id="id21" src="map.jpg" alt="Empty Location" height="100" width="100" onclick="check(21)"></div>
+        <div class="location"><img id="id22" src="map.jpg" alt="Trap Location" height="100" width="100" onclick="check(22)"></div>
+        <div class="location"><img id="id23" src="map.jpg" alt="Empty Location" height="100" width="100" onclick="check(23)"></div>
+        <div class="location"><img id="id24" src="map.jpg" alt="Pirate Location" height="100" width="100" onclick="check(24)"></div>
     </div>
 </div>
 
+
+<script>
+    var ids = ["id0","id1","id2","id3","id4",
+               "id5","id6","id7","id8","id9",
+               "id10","id11","id12","id13","id14",
+               "id15","id16","id17","id18","id19",
+               "id20","id21","id22","id23","id24"];
+
+    var checkCount = 0;
+    var penalty = 0;
+    var lastCheck = 0;
+    var treasureLocation = 5;
+    var trapLocation = 18;
+    var gameOver = false;
+
+    function check(position) {
+        if (gameOver) return;
+
+        const id = ids[position];
+        const imageElement = document.getElementById(id);
+
+        let imageSrc = "";
+        if (position === treasureLocation) {
+            imageSrc = "treasure.jpg";
+            gameOver = true;
+            penalty -= 3;
+            checkCount++;
+        } else if (position === trapLocation) {
+            imageSrc = "trap.jpg";
+            gameOver = true;
+            penalty += 4;
+            checkCount++;
+        } else {
+            imageSrc = "pirate.jpg";
+            checkCount++;
+            penalty++;
+        }
+
+        imageElement.setAttribute("src", imageSrc);
+        document.getElementById("locations").textContent = "Number of locations checked is : " + checkCount;
+        document.getElementById("penalty").textContent = "Penalty is : " + penalty;
+        lastCheck = position; 
+    }
+
+    function help() {
+        const rowColTreasure = { row: Math.floor(treasureLocation / 5), col: treasureLocation % 5 };
+        const rowColLast = { row: Math.floor(lastCheck / 5), col: lastCheck % 5 };
+
+        const rowDiff = Math.abs(rowColTreasure.row - rowColLast.row);
+        const colDiff = Math.abs(rowColTreasure.col - rowColLast.col);
+
+        if (rowDiff + colDiff === 1) {
+            return "Can smell it";
+        } else if (rowDiff + colDiff === 2) {
+            return "Close Matie";
+        } else {
+            return "Step Faster";
+        }
+    }
+
+    function showHelp() {
+        document.getElementById("help").textContent = help();
+    }
+
+</script>
 </body>
 </html>
