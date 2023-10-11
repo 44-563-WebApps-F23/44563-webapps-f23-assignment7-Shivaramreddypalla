@@ -164,10 +164,13 @@
         } else {
             return "Step Faster";
         }
+        
     }
 
     function showHelp() {
         document.getElementById("help").textContent = help();
+        penalty  +=2;
+        document.getElementById("penalty").textContent = "Penalty is : " + penalty;
     }
 
 </script>
