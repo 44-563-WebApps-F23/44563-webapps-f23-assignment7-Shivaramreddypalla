@@ -30,7 +30,8 @@
         #locations,
         #penalty,
         #help,
-        #click {
+        #click,
+        #game {
             font-size: 14px;
             font-weight: bold;
             margin: 10px;
@@ -62,6 +63,7 @@
 <p id="penalty">Penalty is zero.</p>
 <p id="click" onclick="showHelp()">Click for help.</p>
 <p id="help">Help report.</p>
+<p id="game" onclick="newGame()">New Game</p>
 
 <div class="game-container">
     
@@ -172,6 +174,27 @@
         penalty  +=2;
         document.getElementById("penalty").textContent = "Penalty is : " + penalty;
     }
+
+    function newGame() {
+    checkCount = 0;
+    penalty = 0;
+    lastCheck = 0;
+    gameOver = false;
+
+    treasureLocation = Math.floor(Math.random() * 25);
+    do {
+        trapLocation = Math.floor(Math.random() * 25);
+    } while (trapLocation === treasureLocation);
+
+    document.getElementById("locations").textContent = "Number of locations checked is : " + checkCount;
+    document.getElementById("penalty").textContent = "Penalty is : " + penalty;
+    document.getElementById("help").textContent = "Help report";
+
+    for (var i = 0; i < 25; i++) {
+        document.getElementById(ids[i]).src = "map.jpg"
+    }
+}
+
 
 </script>
 </body>

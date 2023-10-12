@@ -36,6 +36,12 @@
             color: #fff;
             font-size: 20px;
         }
+
+        #randomButton {
+            background-color: #09a3fc;
+            color: #fff;
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -45,9 +51,10 @@
 
     <div id="target">Your time: </div>
     <div id="counter">Count: </div>
-<br>
+    <br>
     <button id="startButton">Start Timer</button>
     <button id="reactButton">React</button>
+    <button id="randomButton" onclick="randomStart()">Random Start</button>
 
     <script>
         let reactTime = undefined;
@@ -80,6 +87,17 @@
 
         const startButton = document.getElementById("startButton");
         startButton.onclick = startTime;
+
+
+        function randomStart() {
+            const startCount = Math.floor(Math.random() * (10 - 2 + 1) + 2);
+            document.getElementById("counter").innerHTML = startCount;
+            startTime();
+        }
+
+        const randomButton = document.getElementById("randomButton");
+        randomButton.onclick = randomStart;
+
     </script>
 
 </body>
